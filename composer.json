@@ -1,0 +1,21 @@
+{
+    "name": "adammcgurk/base-api",
+    "description": "A simple PHP library to help build out the API bones of what every PHP repo will have",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability":"stable",
+    "authors": [
+        {
+            "name": "Adam McGurk",
+            "email": "amcgurk@shinesolar.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BaseApi\\": "src/BaseApi/"
+        }
+    },
+    "require": {
+        "adammcgurk/shine-php": "2.1.0"
+    }
+}
