@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-use ShinePHP\Database\{Crud, CrudException};
 
 namespace BaseApi;
+use ShinePHP\Database\{Crud, CrudException};
 
 final class Router {
 
@@ -21,9 +21,9 @@ final class Router {
 	public function set_db_connection(): void {
 
 		try {
-			$Crud = new ShinePHP\Database\Crud();
+			$Crud = new Crud();
 			$this->Crud = $Crud;
-		} catch (PDOException|ShinePHP\Database\CrudException $pex) {
+		} catch (PDOException|CrudException $pex) {
 			throw new RouterException('Sorry, server error. We cannot connect to the database');
 		}
 
