@@ -44,7 +44,7 @@ final class Api {
 	private function set_input_data(array $input_data, array $required_params = array()): void {
 
 		try {
-			IncomingRequest::require_input_data($input_data, $this->required_params);
+			IncomingRequest::require_input_data($input_data, $required_params);
 			$this->input_data = $input_data;
 		} catch (IncomingRequestException $ire) {
 			\header($_SERVER['SERVER_PROTOCOL'].' 400 Bad Request');
