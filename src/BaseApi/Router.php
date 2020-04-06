@@ -21,9 +21,9 @@ final class Router {
 	public function set_db_connection(): void {
 
 		try {
-			$Crud = new Crud();
+			$Crud = new ShinePHP\Database\Crud();
 			$this->Crud = $Crud;
-		} catch (PDOException|CrudException $pex) {
+		} catch (PDOException|ShinePHP\Database\CrudException $pex) {
 			throw new RouterException('Sorry, server error. We cannot connect to the database');
 		}
 
