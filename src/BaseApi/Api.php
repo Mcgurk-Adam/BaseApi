@@ -3,6 +3,8 @@ declare(strict_types=1);
 use ShinePHP\Database\{Crud, CrudException};
 use ShinePHP\Http\{IncomingRequest, IncomingRequestException};
 
+namespace BaseApi;
+
 final class Api {
 
 	private $required_request_method;
