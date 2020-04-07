@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90be19bb7d69606f1438b62d35a1a81b",
+    "content-hash": "f5aaeef03ce6c1b0409f077127069c50",
     "packages": [
         {
             "name": "adammcgurk/shine-php",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mcgurk-Adam/ShinePHP.git",
-                "reference": "7b0f81dde0a3a33b94c51d6dd6eee4a7dca8ac1f"
+                "reference": "cbe8e3fcb6e7f9f01e6b72266907b03f2315e3a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mcgurk-Adam/ShinePHP/zipball/7b0f81dde0a3a33b94c51d6dd6eee4a7dca8ac1f",
-                "reference": "7b0f81dde0a3a33b94c51d6dd6eee4a7dca8ac1f",
+                "url": "https://api.github.com/repos/Mcgurk-Adam/ShinePHP/zipball/cbe8e3fcb6e7f9f01e6b72266907b03f2315e3a2",
+                "reference": "cbe8e3fcb6e7f9f01e6b72266907b03f2315e3a2",
                 "shasum": ""
             },
             "type": "library",
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "A simple PHP library to help speed development through the monotonous part of PHP programming (dealing with user input, DB connections, HTTP, etc...)",
-            "time": "2020-03-30T16:23:06+00:00"
+            "time": "2020-04-07T17:11:12+00:00"
         }
     ],
     "packages-dev": [],
