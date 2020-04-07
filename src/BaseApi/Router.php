@@ -24,7 +24,7 @@ final class Router {
 			$Crud = new Crud();
 			$this->Crud = $Crud;
 		} catch (PDOException|CrudException $pex) {
-			throw new RouterException('Sorry, server error. We cannot connect to the database');
+			throw new RouterException($pex->getMessage());
 		}
 
 	}
