@@ -16,6 +16,6 @@
         }
     },
     "require": {
-        "adammcgurk/shine-php": "2.2.0"
+        "adammcgurk/shine-php": "^2.3.0"
     }
 }
