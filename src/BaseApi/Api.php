@@ -32,11 +32,13 @@ final class Api {
 			throw new ApiException('Sorry, you used the wrong content type. Please use: '.$this->content_type);
 		}
 
-		if (!empty($required_params)) {
+		$input_data = ($this->required_request_method === 'GET' ? $_GET : IncomingRequest::retrieve_json_input());
 
-			$input_data = ($this->required_request_method === 'GET' ? $_GET : IncomingRequest::retrieve_json_input());
+		if (!empty($required_params)) {
 			$this->set_input_data($input_data, $required_params);
 
+		} else {
+			$this->set_input_data($input_data);
 		}
 
 	}
