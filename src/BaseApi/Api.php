@@ -43,6 +43,20 @@ final class Api {
 
 	}
 
+	public function validate_request_no_data(): void {
+
+		if (!IncomingRequest::validate_request_method($this->required_request_method)) {
+			\header($_SERVER['SERVER_PROTOCOL'].' 405 Method Not Allowed');
+			throw new ApiException('Sorry, you used the wrong request method. Please use: '.$this->required_request_method);
+		}
+
+		if (!IncomingRequest::validate_content_type($this->content_type)) {
+			\header($_SERVER['SERVER_PROTOCOL'].' 400 Bad Request');
+			throw new ApiException('Sorry, you used the wrong content type. Please use: '.$this->content_type);
+		}
+
+	}
+
 	private function set_input_data(array $input_data, array $required_params = array()): void {
 
 		try {
