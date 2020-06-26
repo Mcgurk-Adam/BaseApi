@@ -10,7 +10,7 @@ final class Router {
 
 	// This is accessed in any index.php by calling $this->Crud
 	// Because even though this is a private class member, all top level required files from this class have access to all class members
-	private $Crud;
+	public $Crud;
 
 	public function __construct($raw_path) {
 
