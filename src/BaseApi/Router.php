@@ -29,13 +29,13 @@ final class Router {
 
 	}
 
-	public function route(): void {
+	public function route(array $base_vars = array()): void {
 
 		require_once $this->file_path;
 
 	}
 
-	public static function get_required_php_file(string $path, array $base_vars = array()): string {
+	public static function get_required_php_file(string $path): string {
 
 		// just require the index file
 		if ($path === '/') return 'index.php';
