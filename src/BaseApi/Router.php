@@ -35,7 +35,7 @@ final class Router {
 
 	}
 
-	public static function get_required_php_file(string $path): string {
+	public static function get_required_php_file(string $path, array $base_vars = array()): string {
 
 		// just require the index file
 		if ($path === '/') return 'index.php';
